@@ -142,32 +142,32 @@ address {
     line-height: inherit;
 }
 
-ol,
-ul,
-dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
+// ol,
+// ul,
+// dl {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+// }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-    margin-bottom: 0;
-}
+// ol ol,
+// ul ul,
+// ol ul,
+// ul ol {
+//     margin-bottom: 0;
+// }
 
-dt {
-    font-weight: bold;
-}
+// dt {
+//     font-weight: bold;
+// }
 
-dd {
-    margin-bottom: .5rem;
-    margin-left: 0; // Undo browser default
-}
+// dd {
+//     margin-bottom: .5rem;
+//     margin-left: 0; // Undo browser default
+// }
 
-blockquote {
-    margin: 0 0 1rem;
-}
+// blockquote {
+//     margin: 0 0 1rem;
+// }
 
 
 //
@@ -215,19 +215,19 @@ a:not([href]) {
 // Code
 //
 
-pre {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
+// pre {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+// }
 
 
 //
 // Figures
 //
 
-figure {
-    margin: 0 0 1rem;
-}
+// figure {
+//     margin: 0 0 1rem;
+// }
 
 
 //
@@ -236,6 +236,7 @@ figure {
 
 img {
     vertical-align: middle;
+    border-style: none;
 }
 
 
@@ -270,6 +271,7 @@ select,
 summary,
 textarea {
     touch-action: manipulation;
+    -webkit-appearance: none;
 }
 
 
@@ -281,13 +283,13 @@ table {
     background-color: $table-bg;
 }
 
-caption {
-    padding-top: $table-cell-padding;
-    padding-bottom: $table-cell-padding;
-    color: $text-muted;
-    text-align: left;
-    caption-side: bottom;
-}
+// caption {
+//     padding-top: $table-cell-padding;
+//     padding-bottom: $table-cell-padding;
+//     color: $text-muted;
+//     text-align: left;
+//     caption-side: bottom;
+// }
 
 th {
     text-align: left;
@@ -353,4 +355,14 @@ output {
 // Always hide an element with the `hidden` HTML attribute (from PureCSS).
 [hidden] {
     display: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    outline: 0 solid transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
 }

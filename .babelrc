@@ -1,4 +1,0 @@
-{
-    "presets": ["vue", "es2015", "stage-1"],
-    "comments": false
-}

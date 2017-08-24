@@ -151,9 +151,9 @@ if(typeof window !== 'undefined' && window.Vue) {
 
 /* eslint-disable */
 // 方便单个导出
-Object.keys(impression).forEach(key => {
-    exports[key] = impression[key];
-});
+// Object.keys(impression).forEach(key => {
+//     exports[key] = impression[key];
+// });
 
 export default {
     install,

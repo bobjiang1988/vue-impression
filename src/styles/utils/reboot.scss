@@ -32,8 +32,8 @@ html {
     @include respond-to(lg) {
         font-size: $font-size-root-lg;
     }
-    @include respond-to(lgst) {
-        font-size: $font-size-root-lgst;
+    @include respond-to(def) {
+        font-size: $font-size-root-def;
     }
 }
 

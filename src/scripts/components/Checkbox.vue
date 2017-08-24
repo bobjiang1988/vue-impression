@@ -8,7 +8,7 @@
             :disabled="disabled || $parent.disabled"
             v-model="currentValue">
         <span class="checkbox-addon">
-            <i class="fa fa-check" />
+            <i class="icon icon-check" />
         </span>
         <span class="checkbox-label">
             <slot></slot>

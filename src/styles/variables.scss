@@ -43,6 +43,7 @@ $text-muted: $gray-light !default;
 $font-size-root: 12px !default;
 $font-size-root-md: 14px !default;
 $font-size-root-lg: 16px !default;
+$font-size-root-lgst: 18px !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: 1.4rem !default;
@@ -53,6 +54,7 @@ $all-media-query-device: (
   'sm': '(min-width: 320px) and (min-resolution: 2dppx)',
   'md': '(min-width: 360px) and (min-resolution: 2dppx)',
   'lg': '(min-width: 414px) and (min-resolution: 3dppx)',
+  'lgst': '(min-width: 600px)',
 ) !default;
 
 

@@ -1,11 +1,11 @@
 <template>
     <i
         @click="$emit('click')"
-        class="fa"
+        class="icon"
         :class="[
-            `fa-${name}`,
+            `icon-${name}`,
             {
-                [`fa-${size}`]: size,
+                [`icon-${size}`]: size,
                 'gap-left': left,
                 'gap-right': right,
             }

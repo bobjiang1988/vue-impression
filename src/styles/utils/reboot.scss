@@ -32,6 +32,9 @@ html {
     @include respond-to(lg) {
         font-size: $font-size-root-lg;
     }
+    @include respond-to(lgst) {
+        font-size: $font-size-root-lgst;
+    }
 }
 
 // iphone 4/5
@@ -272,6 +275,7 @@ summary,
 textarea {
     touch-action: manipulation;
     -webkit-appearance: none;
+    font: inherit;
 }
 
 

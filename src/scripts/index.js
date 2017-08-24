@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Button from './components/Button';
-// import Icon from './components/Icon';
+import Icon from './components/Icon';
 import Group from './components/Group';
 import GroupTitle from './components/GroupTitle';
 import Cell from './components/Cell';
@@ -73,7 +73,7 @@ const impression = {
     Cell,
     Flex,
     FlexItem,
-    // Icon,
+    Icon,
     // Tag,
     // Tip,
     // HRule,

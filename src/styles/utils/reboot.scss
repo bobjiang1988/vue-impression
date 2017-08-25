@@ -32,9 +32,6 @@ html {
     @include respond-to(lg) {
         font-size: $font-size-root-lg;
     }
-    @include respond-to(def) {
-        font-size: $font-size-root-def;
-    }
 }
 
 // iphone 4/5

@@ -1,11 +1,12 @@
 // Colors
-$brand-primary: #1C89EA !default;
-$brand-secondary: #FF7043 !default;
+$brand-primary: #16a5af !default;
+$brand-secondary: #f48f18 !default;
 $brand-success: #30BE71 !default;
 $brand-info: #2b71b5 !default;
 $brand-warning: #fab83a !default;
 $brand-danger: #EA413A !default;
 $brand-pure: #fff !default;
+$brand-price: #ff6600 !default;
 
 $gray-dark: #373a3c !default;
 $gray: #55595c !default;
@@ -14,9 +15,9 @@ $gray-lighter: #eceeef !default;
 $gray-lightest: #f4f4f4 !default;
 
 // Border radius
-$border-radius: 2px !default;
-$border-radius-lg: 4px !default;
-$border-radius-sm: 1px !default;
+$border-radius: 4px !default;
+$border-radius-lg: 6px !default;
+$border-radius-sm: 2px !default;
 $border-radius-circle: 10rem !default;
 
 // Cursor
@@ -35,40 +36,41 @@ $z-index-alert: 1030 !default;
 
 // Base
 $font-family-base: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "WenQuanYi Micro Hei", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
-$line-height-base: 1.43 !default;
+$line-height-base: 1.5 !default;
 $body-color: #333 !default;
-$body-bg: #f0eff5 !default;
+$body-bg: #f5f5f5 !default;
 $text-muted: $gray-light !default;
 
-$font-size-root: 12px !default;
-$font-size-root-md: 14px !default;
-$font-size-root-lg: 16px !default;
-$font-size-root-def: 14px !default;
+$font-size-root: 20px !default;
+$font-size-root-md: 24px !default;
+$font-size-root-lg: 28px !default;
 
-$font-size-base: 1rem !default;
-$font-size-lg: 1.4rem !default;
-$font-size-sm: .875rem !default;
+$font-size-sm: .5rem !default;
+$font-size-base: .6rem !default;
+$font-size-md: .7rem;
+$font-size-lg: .8rem;
+$font-size-lger: 1rem !default;
 
 // media query
 $all-media-query-device: (
-  'sm': '(min-width: 320px) and (min-resolution: 2dppx)',
-  'md': '(min-width: 360px) and (min-resolution: 2dppx)',
+//   'sm': '(min-width: 320px) and (min-resolution: 2dppx)',
+  'md': '(min-width: 414px) and (min-resolution: 2dppx)',
   'lg': '(min-width: 414px) and (min-resolution: 3dppx)',
-  'def': '(min-width: 600px)',
+//   'def': '(min-width: 600px)',
 ) !default;
 
 
-$spacer:   1rem !default;
+$spacer:   .8rem !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
-$spacer-gap: $spacer / 2 !default;
+$spacer-gap: .5rem !default;
 
 // Border
-$border-color: #e0e0e0 !default;
+$border-color: #f0f0f0 !default;
 $border-image-top: linear-gradient(to bottom, $border-color, $border-color 50%, transparent 0) !default;
 $border-image-bottom: linear-gradient(to top, $border-color, $border-color 50%, transparent 0) !default;
 $border-image-left: linear-gradient(to right, $border-color, $border-color 50%, transparent 0) !default;
-
+$border-image-right: linear-gradient(to left, $border-color, $border-color 50%, transparent 0) !default;
 // Hr
 $hr-color: $border-color !default;
 $hr-margin: 1rem 0 !default;
@@ -124,9 +126,10 @@ $group-title-padding: .5rem 1rem !default;
 
 $cell-color: $body-color !default;
 $cell-bg-color: $brand-pure !default;
-$cell-padding: 1.2rem 1rem !default;
-$cell-gap-left: 1rem !default;
-$cell-children-gap: 1rem !default;
+$cell-padding: $spacer !default;
+$cell-padding-lg: .8rem $spacer;
+$cell-gap-left: $spacer !default;
+$cell-children-gap: $spacer-gap !default;
 
 $cell-bg-color-active: $gray-lightest !default;
 $cell-bg-color-disabled: $border-color !default;
@@ -135,16 +138,16 @@ $cell-arrow-color: #818a91 !default;
 $cell-arrow-margin: 0 0 0 $spacer-gap !default;
 
 // Navbar
-$navbar-height: 3.67rem !default;
+$navbar-height: 2.2rem !default;
 $navbar-line-height: $navbar-height !default;
 $navbar-padding: 0 !default;
 
 $navbar-header-flex: .5 !default;
-$navbar-header-padding: 0 1rem !default;
+$navbar-header-padding: 0 $spacer !default;
 $navbar-body-flex: 1 !default;
-$navbar-body-padding: 0 1rem !default;
+$navbar-body-padding: 0 $spacer !default;
 $navbar-footer-flex: .5 !default;
-$navbar-footer-padding: 0 1rem !default;
+$navbar-footer-padding: 0 $spacer !default;
 
 $navbar-primary-color: $brand-pure !default;
 $navbar-primary-bg-color: $brand-primary !default;
@@ -156,60 +159,61 @@ $navbar-default-bg-color: $brand-pure !default;
 $tabbar-bg-color: $brand-pure !default;
 $tabbar-margin-bottom: 1rem !default;
 $tabbar-height: $navbar-height !default;
+$tabbar-sm-height: 1.8rem;
 $tabbar-line-height: $tabbar-height !default;
 $tabbar-transition: all .3s cubic-bezier(.86, 0, .07, 1) !default;
 $tabbar-opacity-disabled: $opacity-disabled !default;
 
-$tabbar-item-border-width: .167rem !default;
+$tabbar-item-border-width: .1rem !default;
 $tabbar-item-color-active: $brand-primary !default;
 $tabbar-item-border-color-active: $brand-primary !default;
 
 // Toast
 $toast-bg: rgba(0, 0, 0, .6) !default;
 $toast-color: $brand-pure !default;
-$toast-font-size: 1.1rem !default;
-$toast-border-radius: .333rem !default;
-$toast-border-radius-lg: .5rem !default;
-$toast-padding: 1rem 1.2rem !default;
-$toast-padding-lg: 1rem 3.5rem 1.5rem !default;
-$toast-position-gap: 4rem !default;
+$toast-font-size: $font-size-base !default;
+$toast-border-radius: $border-radius !default;
+$toast-border-radius-lg: $border-radius-lg !default;
+$toast-padding: $spacer-gap $spacer !default;
+$toast-padding-lg: $spacer-gap 1.5*$spacer 1.2*$spacer !default;
+$toast-position-gap: 3rem !default;
 $toast-max-width: 80% !default;
 $toast-animation-enter-duration: .6s !default;
 $toast-animation-enter-function: ease-in !default;
 $toast-animation-leave-duration: .3s !default;
 $toast-animation-leave-function: cubic-bezier(.6, .04, .98, .34) !default;
 
-$toast-icon-font-size: 4rem !default;
-$toast-icon-margin-bottom: .5rem !default;
+$toast-icon-font-size: 2rem !default;
+$toast-icon-margin-bottom: .25rem !default;
 
-$toast-loading-margin: 1rem 0 !default;
+$toast-loading-margin: .5rem 0 !default;
 
 // Alert
-$alert-width: 22.5rem !default;
-$alert-max-width: 22.5rem !default;
-$alert-padding: 2.145rem 0 0 0 !default;
+$alert-width: 10rem !default;
+$alert-max-width: 13.5rem !default;
+$alert-padding: .75rem 0 0 0 !default;
 $alert-bg-color: $brand-pure !default;
 $alert-border-radius: $border-radius-lg !default;
 $alert-animation-duration: .2s !default;
 $alert-animation-enter-function: cubic-bezier(.08, .82, .167, 1) !default;
 $alert-animation-leave-function: cubic-bezier(.6, .04, .98, .34) !default;
 
-$alert-title-font-size: 1.43rem !default;
+$alert-title-font-size: $font-size-md !default;
 $alert-title-font-weight: bold !default;
 $alert-title-color: #333333 !default;
 
 $alert-message-color: #666666 !default;
-$alert-message-font-size: 1.07rem !default;
-$alert-message-padding: 1.785rem 1.43rem !default;
+$alert-message-font-size: $font-size-base !default;
+$alert-message-padding: $spacer-gap $spacer !default;
 $alert-message-line-height: 1.43 !default;
 $alert-message-text-align: center !default;
 
 $alert-btn-color: $brand-primary !default;
-$alert-btn-font-size: 1.215rem !default;
-$alert-btn-padding: 1rem 0 !default;
+$alert-btn-font-size: $font-size-base !default;
+$alert-btn-padding: $spacer-gap 0 !default;
 
-$alert-box-h-shadow: 0 0 0.85rem 0 rgba(0, 0, 0, 0.22) !default;
-$alert-box-v-shadow: 0 0.85rem 0.85rem 0 rgba(0, 0, 0, 0.30) !default;
+$alert-box-h-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.22) !default;
+$alert-box-v-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.30) !default;
 
 // Checkbox
 $checkbox-padding: 3px !default;
@@ -224,17 +228,17 @@ $checkbox-bg-color-disabled: #dfdfdf !default;
 $checkbox-border-color-disabled: $checkbox-border-color !default;
 
 
-$checkbox-addon-font-size: 1.5rem !default;
+$checkbox-addon-font-size: .7rem !default;
 $checkbox-addon-padding-top: 0 !default;
-$radio-addon-width: 1.0rem !default;
+$radio-addon-width: .5rem !default;
 $radio-addon-height: $radio-addon-width !default;
-$radio-addon-padding: .5rem !default;
+$radio-addon-padding: .25rem !default;
 
-$checkbox-label-gap: .167rem !default;
+$checkbox-label-gap: 2px !default;
 
 $checkbox-square-border-radius: $border-radius !default;
 
-$checkbox-gap: 1rem !default;
+$checkbox-gap: $spacer-gap !default;
 
 // Toggle
 $toggle-addon-size: 1.34rem !default;
@@ -251,8 +255,8 @@ $toggle-transition: all .2s ease !default;
 // Number
 $number-border-color: $brand-primary !default;
 
-$number-btn-size: 2.0rem !default;
-$number-btn-line-height: $number-btn-size - 0.167 !default;
+$number-btn-size: $font-size-root !default;
+$number-btn-line-height: $number-btn-size - 0.08 !default;
 
 $number-plus-color: $brand-pure !default;
 $number-plus-bg-color: $brand-primary !default;
@@ -263,23 +267,23 @@ $number-minus-bg-color: $brand-pure !default;
 $number-minus-color-active: $brand-pure !default;
 $number-minus-bg-color-active: $brand-primary !default;
 
-$number-input-width: 3rem !default;
+$number-input-width: 1.5rem !default;
 $number-input-bg-color: $brand-pure !default;
 $number-input-border-color: #d9d9d9 !default;
-$number-input-padding: .6rem .3rem !default;
-$number-input-margin: 0 .167rem !default;
+$number-input-padding: .3rem .15rem !default;
+$number-input-margin: 0 2px !default;
 $number-input-bg-color-disabled: #eee !default;
 
 // InputText
-$input-font-size: 1rem !default;
-$input-text-icon-gap: 1rem !default;
+$input-font-size: $font-size-base !default;
+$input-text-icon-gap: $spacer-gap !default;
 
 // InputTeaxtarea
-$textarea-padding: .6rem !default;
+$textarea-padding: .3rem !default;
 
 $textarea-counter-scale: .8 !default;
 $textarea-counter-color: $text-muted !default;
-$textarea-counter-padding: 0 $textarea-padding / $textarea-counter-scale .2rem 0 !default;
+$textarea-counter-padding: 0 $textarea-padding / $textarea-counter-scale .1rem 0 !default;
 
 // Selector
 $selector-color-active: $brand-primary !default;
@@ -288,7 +292,7 @@ $selector-color-transition: all .2s ease-in-out !default;
 
 // InlineSelector
 $inline-selector-transition: all .2s ease-in !default;
-$inline-selector-option-min-width: 4.583rem !default;
+$inline-selector-option-min-width: 2rem !default;
 $inline-selector-option-padding: .6rem .2rem !default;
 
 
@@ -308,20 +312,20 @@ $tag-default-bg: #ccc !default;
 $tag-default-color: #666 !default;
 
 // Navigation
-$navigation-height: 4.0833rem !default;
+$navigation-height: 2rem !default;
 $navigation-color: #888 !default;
 $navigation-color-active: $brand-primary !default;
 $navigation-bg-color: $tabbar-bg-color !default;
 
 $navigation-label-scale: .8 !default;
-$navigation-margin: .167rem 0 -.8rem 0 !default;
+$navigation-margin: 2px 0 -.8rem 0 !default;
 
 // Tip
-$tip-padding: 1rem 4rem !default;
+$tip-padding: .5rem 2rem !default;
 
 $tip-line-height: 1px !default;
 
-$tip-label-padding: 0 1rem !default;
+$tip-label-padding: 0 .5rem !default;
 $tip-label-color: #888 !default;
 
 // BackToTop
@@ -367,16 +371,16 @@ $mask-animation-leave-function: ease !default;
 
 // Slide
 $slide-bg-color: $brand-pure !default;
-$slide-min-height: 5rem !default;
-$slide-max-height: 25rem !default;
+$slide-min-height: 3rem !default;
+$slide-max-height: 14rem !default;
 $slide-animation-enter-duration: .3s !default;
 $slide-animation-enter-function: ease-in-out !default;
 $slide-animation-leave-duration: .2s !default;
 $slide-animation-leave-function: ease-in-out !default;
 
-$slide-header-padding: 1rem !default;
+$slide-header-padding:  $spacer-gap $spacer !default;
 
-$slide-body-padding: 1rem !default;
+$slide-body-padding: $spacer-gap $spacer !default;
 
 // Sidelip
 $sidelip-width: 65% !default;
@@ -404,7 +408,7 @@ $segmented-control-item-font-size: $font-size-base !default;
 
 // Meida
 $media-bg-color: $brand-pure !default;
-$media-object-gap: 1rem !default;
+$media-object-gap: $spacer !default;
 
 // Card
 $card-bg-color: $brand-pure !default;
@@ -471,9 +475,9 @@ $picker-tap-height: $picker-item-height !default;
 $picker-list-transition: all .3s ease-out !default;
 
 // Swipe
-$swipe-indicators-bottom: .5rem !default;
+$swipe-indicators-bottom: .25rem !default;
 
-$swipe-indicator-padding: 0.25rem !default;
+$swipe-indicator-padding: 0.15rem !default;
 $swipe-indicator-margin: 0 1px !default;
 $swipe-indicator-opacity: 1 !default;
 $swipe-indicator-border-color: $brand-pure !default;

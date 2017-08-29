@@ -4,9 +4,9 @@ $brand-secondary: #f48f18 !default;
 $brand-success: #30BE71 !default;
 $brand-info: #2b71b5 !default;
 $brand-warning: #fab83a !default;
-$brand-danger: #EA413A !default;
+$brand-danger: #ea4235 !default;
 $brand-pure: #fff !default;
-$brand-price: #ff6600 !default;
+$brand-price: #ea4235 !default;
 
 $gray-dark: #373a3c !default;
 $gray: #55595c !default;
@@ -302,7 +302,9 @@ $tag-color: $brand-pure !default;
 $tag-border-radius: $border-radius !default;
 
 $tag-padding-sm: .2em .4em !default;
+$tag-padding-md: $tag-padding-sm;
 $tag-scale-sm: .85 !default;
+$tag-scale-md: 1 !default;
 
 $tag-primary-bg: $brand-primary !default;
 $tag-secondary-bg: $brand-secondary !default;

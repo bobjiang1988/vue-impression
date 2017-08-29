@@ -6,6 +6,7 @@
         <div class="swipe-indicators" v-show="dots">
             <div class="swipe-indicator" :class="{active: index - 1 === activeIndex}" v-for="index in length"></div>
         </div>
+        <div class="swipe-indicators-num" v-if="nums">{{(1+activeIndex)+ '/' + length}}</div>
     </div>
 </template>
 
@@ -29,6 +30,10 @@
             dots: {
                 type: Boolean,
                 default: true,
+            },
+            nums: {
+                type: Boolean,
+                default: false,
             },
             // 轮播间隔时间
             interval: {

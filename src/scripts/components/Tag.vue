@@ -22,7 +22,7 @@
             size: {
                 type: String,
                 validator(value) {
-                    return ['sm'].indexOf(value) > -1;
+                    return ['sm', 'md'].indexOf(value) > -1;
                 },
             },
             // 主题

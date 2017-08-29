@@ -50,6 +50,7 @@ $font-size-base: .6rem !default;
 $font-size-md: .7rem;
 $font-size-lg: .8rem;
 $font-size-lger: 1rem !default;
+$font-size-lgst: 1.2rem !default;
 
 // media query
 $all-media-query-device: (
@@ -120,14 +121,14 @@ $btn-loading-gap: .25rem !default;
 
 // Group/Cell
 $group-bg-color: $brand-pure !default;
-$group-margin: 1rem 0 0 0 !default;
+$group-margin: $spacer-gap 0 0 0 !default;
 
 $group-title-padding: .5rem 1rem !default;
 
 $cell-color: $body-color !default;
 $cell-bg-color: $brand-pure !default;
-$cell-padding: $spacer !default;
-$cell-padding-lg: .8rem $spacer;
+$cell-padding: $spacer-gap $spacer !default;
+$cell-padding-lg: $spacer;
 $cell-gap-left: $spacer !default;
 $cell-children-gap: $spacer-gap !default;
 
@@ -297,11 +298,11 @@ $inline-selector-option-padding: .6rem .2rem !default;
 
 
 // Tag
-$tag-padding: .4em .6em !default;
+$tag-padding: .4em .8em !default;
 $tag-color: $brand-pure !default;
 $tag-border-radius: $border-radius !default;
 
-$tag-padding-sm: .2em .4em !default;
+$tag-padding-sm: .2em .6em !default;
 $tag-padding-md: $tag-padding-sm;
 $tag-scale-sm: .85 !default;
 $tag-scale-md: 1 !default;

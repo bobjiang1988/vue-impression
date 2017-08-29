@@ -20,7 +20,6 @@
         background-image: none;
         color: $cell-color;
     }
-
     &:active {
         background-color: $cell-bg-color-active;
     }
@@ -35,9 +34,19 @@
     padding-right: $cell-children-gap;
 }
 
+.cell-sub-header {
+    padding-right: $cell-children-gap;
+}
+
 .cell-body {
     flex: 1;
     display: block;
+    &.cell-sub-header-panel {
+        display: flex;
+    }
+    .cell-sub-body {
+        flex: 1;
+    }
 }
 
 .cell-footer {

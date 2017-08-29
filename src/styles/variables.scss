@@ -10,8 +10,8 @@ $brand-price: #ea4235 !default;
 
 $gray-dark: #373a3c !default;
 $gray: #55595c !default;
-$gray-light: #999 !default;
-$gray-lighter: #eceeef !default;
+$gray-light: #666 !default;
+$gray-lighter: #9e9e9e !default;
 $gray-lightest: #f4f4f4 !default;
 
 // Border radius
@@ -127,8 +127,9 @@ $group-title-padding: .5rem 1rem !default;
 
 $cell-color: $body-color !default;
 $cell-bg-color: $brand-pure !default;
-$cell-padding: $spacer-gap $spacer !default;
-$cell-padding-lg: $spacer;
+$cell-padding-sm: $spacer-gap $spacer !default;
+$cell-padding: $spacer !default;
+$cell-padding-lg: 1.2*$spacer $spacer;
 $cell-gap-left: $spacer !default;
 $cell-children-gap: $spacer-gap !default;
 

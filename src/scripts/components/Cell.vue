@@ -2,10 +2,7 @@
     <router-link v-if="!disabled && to"
         :to="to"
         class="cell cell-link"
-        :class="{
-                                            'cell-disabled': disabled,
-                                            'cell-no-gap': !hasGap,
-                                        }">
+        :class="{'cell-disabled': disabled,'cell-no-gap': !hasGap, 'cell-sm': size=='sm'}">
         <div class="cell-header"
             v-if="$slots.header">
             <slot name="header"></slot>
@@ -35,11 +32,7 @@
         :href="!disabled && href"
         @click="!disabled && $emit('click')"
         class="cell"
-        :class="{
-                                            'cell-link': clickable,
-                                            'cell-disabled': disabled,
-                                            'cell-no-gap': !hasGap,
-                                        }">
+        :class="{'cell-link': clickable,'cell-disabled': disabled,'cell-no-gap': !hasGap, 'cell-sm': size=='sm'}">
         <div class="cell-header"
             v-if="$slots.header">
             <slot name="header"></slot>
@@ -77,6 +70,7 @@ export default {
             type: Boolean,
             default: true,
         },
+        size: String,
         hasArrow: {
             type: Boolean,
             default() {

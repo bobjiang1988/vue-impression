@@ -8,6 +8,9 @@
     @include border-bottom();
     background-position: $cell-gap-left 100%;
     background-color: $cell-bg-color;
+    &.cell-sm {
+        padding: $cell-padding-sm;
+    }
 }
 
 .cell-no-gap {

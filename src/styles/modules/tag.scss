@@ -16,6 +16,7 @@
 }
 
 .tag-primary { @include tag-variant($tag-primary-bg); }
+.tag-secondary { @include tag-variant($tag-secondary-bg); }
 .tag-success { @include tag-variant($tag-success-bg); }
 .tag-warning { @include tag-variant($tag-warning-bg); }
 .tag-danger { @include tag-variant($tag-danger-bg); }
@@ -23,6 +24,7 @@
 
 
 .tag-outline-primary { @include tag-outline-variant($tag-primary-bg); }
+.tag-outline-secondary { @include tag-outline-variant($tag-secondary-bg); }
 .tag-outline-success { @include tag-outline-variant($tag-success-bg); }
 .tag-outline-warning { @include tag-outline-variant($tag-warning-bg); }
 .tag-outline-danger { @include tag-outline-variant($tag-danger-bg); }

@@ -30,7 +30,7 @@
                 type: String,
                 default: 'primary',
                 validator(value) {
-                    return ['primary', 'default', 'success', 'warning', 'danger'].indexOf(value) > -1;
+                    return ['primary', 'secondary', 'default', 'success', 'warning', 'danger'].indexOf(value) > -1;
                 },
             },
             // 形状

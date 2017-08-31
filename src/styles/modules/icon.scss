@@ -1,12 +1,12 @@
 @font-face {
     font-family: "iconfont";
-    // src: url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.woff?t=1503996252248') format('woff'), /* chrome, firefox */
-    // url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.ttf?t=1503996252248') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-    // url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.svg?t=1503996252248#iconfont') format('svg');
+    // src: url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.woff?t=1504088608635') format('woff'), /* chrome, firefox */
+    // url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.ttf?t=1504088608635') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    // url('http://bzs.haobaoweb.com/hbb/static/fonts/iconfont.svg?t=1504088608635#iconfont') format('svg');
     /* iOS 4.1- */
-    src: url('/static/fonts/iconfont.woff?t=1503996252248') format('woff'), /* chrome, firefox */
-    url('/static/fonts/iconfont.ttf?t=1503996252248') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-    url('/static/fonts/iconfont.svg?t=1503996252248#iconfont') format('svg');
+    src: getImgUrl('fonts/iconfont.woff?t=1504088608635') format('woff'), /* chrome, firefox */
+    getImgUrl('fonts/iconfont.ttf?t=1504088608635') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    getImgUrl('fonts/iconfont.svg?t=1504088608635#iconfont') format('svg');
     /* iOS 4.1- */
 }
 
@@ -20,34 +20,86 @@
     vertical-align: middle;
 }
 
-.icon-check:before { content: "\e645"; }
+.icon-lg {
+    font-size: $font-size-lger;
+}
 
-.icon-favorfill:before { content: "\e64b"; }
+.icon-check:before {
+    content: "\e645";
+}
 
-.icon-favor:before { content: "\e64c"; }
+.icon-close:before {
+    content: "\e646";
+}
 
-.icon-locationfill:before { content: "\e650"; }
+.icon-favorfill:before {
+    content: "\e64b";
+}
 
-.icon-phone:before { content: "\e652"; }
+.icon-favor:before {
+    content: "\e64c";
+}
 
-.icon-back:before { content: "\e679"; }
+.icon-locationfill:before {
+    content: "\e650";
+}
 
-.icon-question:before { content: "\e691"; }
+.icon-roundcheckfill:before {
+    content: "\e656";
+}
 
-.icon-right:before { content: "\e6a3"; }
+.icon-back:before {
+    content: "\e679";
+}
 
-.icon-cart:before { content: "\e6af"; }
+.icon-question:before {
+    content: "\e691";
+}
 
-.icon-delete:before { content: "\e6b4"; }
+.icon-right:before {
+    content: "\e6a3";
+}
 
-.icon-goods:before { content: "\e6cd"; }
+.icon-cart:before {
+    content: "\e6af";
+}
 
-.icon-add:before { content: "\e6da"; }
+.icon-delete:before {
+    content: "\e6b4";
+}
 
-.icon-calendar:before { content: "\e74a"; }
+.icon-goods:before {
+    content: "\e6cd";
+}
 
-.icon-minus:before { content: "\e768"; }
+.icon-add:before {
+    content: "\e6da";
+}
 
-.icon-down:before { content: "\e769"; }
+.icon-calendar:before {
+    content: "\e74a";
+}
 
-.icon-kefu:before { content: "\e625"; }
+.icon-discount:before {
+    content: "\e6c5";
+}
+
+.icon-minus:before {
+    content: "\e768";
+}
+
+.icon-phone:before {
+    content: "\e620";
+}
+
+.icon-down:before {
+    content: "\e769";
+}
+
+.icon-share:before {
+    content: "\e624";
+}
+
+.icon-kefu:before {
+    content: "\e625";
+}

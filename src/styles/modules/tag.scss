@@ -9,6 +9,11 @@
     border-radius: $tag-border-radius;
 }
 
+.tag-block {
+    display: block;
+    width: 100%;
+}
+
 .tag-sm {
     padding: $tag-padding-sm;
     transform-origin: 0 50%;
@@ -17,8 +22,14 @@
 
 .tag-md {
     padding: $tag-padding-md;
-    transform-origin: 0 50%;
-    transform: scale($tag-scale-md);
+    // transform-origin: 0 50%;
+    // transform: scale($tag-scale-md);
+}
+
+.tag-lg {
+    padding: $tag-padding-lg;
+    // transform-origin: 0 50%;
+    // transform: scale($tag-scale-lg);
 }
 
 .tag-primary {
@@ -51,6 +62,9 @@
 
 .tag-outline-secondary {
     @include tag-outline-variant($tag-secondary-bg);
+    &.opacity{
+        background-color: rgba($tag-secondary-bg, .1);
+    }
 }
 
 .tag-outline-success {

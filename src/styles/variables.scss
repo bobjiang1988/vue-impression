@@ -1,6 +1,6 @@
 // Colors
 $brand-primary: #16a5af !default;
-$brand-secondary: #f48f18 !default;
+$brand-secondary: #ea4235; // #f48f18 !default;
 $brand-success: #30BE71 !default;
 $brand-info: #2b71b5 !default;
 $brand-warning: #fab83a !default;
@@ -91,18 +91,18 @@ $btn-opacity-disabled: $opacity-disabled !default;
 $btn-loading-opacity-disabled: .9 !default;
 
 $btn-font-size: $font-size-base !default;
-$btn-padding-x: 1.6rem !default;
-$btn-padding-y: .7rem !default;
+$btn-padding-x: 1.5*$spacer !default;
+$btn-padding-y: $spacer-gap !default;
 $btn-border-radius: $border-radius !default;
 
 $btn-font-size-sm: $font-size-sm !default;
-$btn-padding-x-sm: .6rem !default;
-$btn-padding-y-sm: .2rem !default;
+$btn-padding-x-sm: $spacer !default;
+$btn-padding-y-sm: .4*$spacer-gap !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 
 $btn-font-size-lg: $font-size-lg !default;
-$btn-padding-x-lg: 2rem !default;
-$btn-padding-y-lg: 1rem !default;
+$btn-padding-x-lg: 2*$spacer !default;
+$btn-padding-y-lg: $spacer !default;
 $btn-border-radius-lg: $border-radius-lg !default;
 
 $btn-primary-color: $brand-pure;
@@ -113,9 +113,9 @@ $btn-secondary-color: $brand-pure;
 $btn-secondary-bg: $brand-secondary !default;
 $btn-secondary-border: $brand-secondary !default;
 
-$btn-default-color: $gray;
+$btn-default-color: $gray-lighter;
 $btn-default-bg: #fff !default;
-$btn-default-border: $border-color !default;
+$btn-default-border: $gray-lighter !default;
 
 $btn-loading-gap: .25rem !default;
 
@@ -257,22 +257,22 @@ $toggle-transition: all .2s ease !default;
 // Number
 $number-border-color: $brand-primary !default;
 
-$number-btn-size: $font-size-root !default;
+$number-btn-size: 1.2*$font-size-root !default;
 $number-btn-line-height: $number-btn-size - 0.08 !default;
 
-$number-plus-color: $brand-pure !default;
-$number-plus-bg-color: $brand-primary !default;
+$number-plus-color: inherit !default;
+$number-plus-bg-color: $brand-pure !default;
 $number-plus-bg-color-active: darken($number-plus-bg-color, 6%) !default;
 
-$number-minus-color: $brand-primary !default;
+$number-minus-color: inherit !default;
 $number-minus-bg-color: $brand-pure !default;
 $number-minus-color-active: $brand-pure !default;
-$number-minus-bg-color-active: $brand-primary !default;
+$number-minus-bg-color-active: darken($number-minus-bg-color, 6%) !default;
 
-$number-input-width: 1.5rem !default;
+$number-input-width: 2rem !default;
 $number-input-bg-color: $brand-pure !default;
 $number-input-border-color: #d9d9d9 !default;
-$number-input-padding: .3rem .15rem !default;
+$number-input-padding: .1rem .1rem !default;
 $number-input-margin: 0 2px !default;
 $number-input-bg-color-disabled: #eee !default;
 
@@ -304,9 +304,11 @@ $tag-color: $brand-pure !default;
 $tag-border-radius: $border-radius !default;
 
 $tag-padding-sm: .2em .6em !default;
-$tag-padding-md: $tag-padding-sm;
 $tag-scale-sm: .85 !default;
+$tag-padding-md: $tag-padding-sm;
 $tag-scale-md: 1 !default;
+$tag-padding-lg: $spacer-gap $spacer;
+$tag-scale-lg: 1 !default;
 
 $tag-primary-bg: $brand-primary !default;
 $tag-secondary-bg: $brand-secondary !default;
@@ -440,7 +442,7 @@ $loadmore-hint-height: 4.167rem !default;
 $loadmore-hint-margin: -4.167rem !default;
 
 // Loading
-$loading-width: 4rem !default;
+$loading-width: 2rem !default;
 $loading-animation-duration: 2s !default;
 
 $loading-path-stroke: $border-color !default;
@@ -450,7 +452,7 @@ $loading-path-animation-duration: 1.5s !default;
 $loading-path-stroke-primary: $brand-primary !default;
 $loading-path-stroke-secondary: $brand-secondary !default;
 
-$loading-width-sm: 1rem !default;
+$loading-width-sm: .5rem !default;
 
 // Picker
 $picker-bg-color: $brand-pure !default;

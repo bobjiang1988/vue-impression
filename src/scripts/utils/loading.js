@@ -5,9 +5,11 @@ const Toast = Vue.extend(OriginToast);
 
 let instance,
     active = false;
+let loadingCount = 0;
 
 export default {
     show(message = '加载中') {
+        loadingCount++;
         if(active) return;
 
         /* global document:true */
@@ -29,6 +31,13 @@ export default {
         });
     },
     hide() {
+        loadingCount--;
+        if(loadingCount > 0) return;
+        if(loadingCount < 0) {
+            loadingCount = 0;
+
+            return;
+        }
         instance.hide();
         active = false;
     },
@@ -36,3 +45,13 @@ export default {
         return active ? this.hide() : this.show(message);
     },
 };
+document.addEventListener('click', evt => {
+    if(active) {
+        evt.preventDefault();
+        evt.stopPropagation();
+
+        return false;
+    }
+
+    return true;
+}, true);

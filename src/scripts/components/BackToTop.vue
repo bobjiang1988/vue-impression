@@ -39,7 +39,7 @@
             },
             getScrollTop() {
                 return this.scrollTargetEl === document
-                ? window.pageYOffset : this.scrollTargetEl.scrollTop;
+                    ? window.pageYOffset : this.scrollTargetEl.scrollTop;
             },
             setScrollTop(val) {
                 if(this.scrollTargetEl === document) {
@@ -53,11 +53,11 @@
             },
             touchStartHandle() {
                 this._offsetY = this.scrollTargetEl === document
-                ? window.pageYOffset : this.scrollTargetEl.scrollTop;
+                    ? window.pageYOffset : this.scrollTargetEl.scrollTop;
             },
             touchEndHandle() {
                 let scrollTop = this.scrollTargetEl === document
-                ? window.pageYOffset : this.scrollTargetEl.scrollTop;
+                    ? window.pageYOffset : this.scrollTargetEl.scrollTop;
 
                 // 显示
                 if(scrollTop < this._offsetY && (this._offsetY - scrollTop > 60)) {

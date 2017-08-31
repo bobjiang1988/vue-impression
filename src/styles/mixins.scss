@@ -1,9 +1,12 @@
 // utils
 @import 'mixins/border';
 @import 'mixins/text';
-
 @import 'mixins/button';
 @import 'mixins/navbar';
 @import 'mixins/tag';
 @import 'mixins/progressbar';
 @import 'mixins/media';
+@import './root.scss';
+@function getImgUrl($url) {
+    @return #{'url('+$root-name+'/static/'+$url+')'};
+}

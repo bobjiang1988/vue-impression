@@ -5,7 +5,7 @@ const Alert = Vue.extend(OriginAlert);
 let alertInstance;
 
 // Alert框
-export const alert = option => {
+export const alert = (option, onShow) => {
     option.title = option.title || '提示';
 
     alertInstance = new Alert({
@@ -18,6 +18,7 @@ export const alert = option => {
 
     Vue.nextTick(() => {
         alertInstance.show();
+        onShow && onShow(alertInstance);
     });
 
     return alertInstance;

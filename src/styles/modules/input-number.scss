@@ -1,5 +1,6 @@
 .input-number {
     display: inline-block;
+    font-size: 0;
 }
 
 .input-number-disabled {
@@ -9,12 +10,17 @@
         background-color: $number-input-bg-color-disabled;
     }
 }
-
+.input-number-minus{
+    border-radius: $border-radius 0 0 $border-radius;
+}
+.input-number-plus{
+    border-radius: 0 $border-radius $border-radius 0;
+}
 .input-number-minus,
 .input-number-plus {
     text-align: center;
     display: inline-block;
-    border-radius: 50%;
+    // border-radius: 50%;
     appearance: none;
     overflow: hidden;
     outline: 0;
@@ -23,10 +29,10 @@
     user-select: none;
     font-weight: bold;
     height: $number-btn-size;
-    width: $number-btn-size;
+    width: $number-btn-size + 5px;
     line-height: $number-btn-line-height;
-    border: 1px solid $number-border-color;
-
+    border: 1px solid $number-input-border-color;;
+    
     &,
     &:active,
     &.active {
@@ -42,7 +48,8 @@
     }
 
     &.disabled {
-        opacity: $btn-opacity-disabled;
+        // opacity: $btn-opacity-disabled;
+        background-color: $number-plus-bg-color-active;
     }
 }
 
@@ -75,16 +82,21 @@
 }
 
 .input-number-input {
+    font-size: $font-size-base;
     text-align: center;
     vertical-align: middle;
     width: $number-input-width;
-    padding: $number-input-padding;
-    margin: $number-input-margin;
+    height: $number-btn-size;
+    // padding: $number-input-padding;
+    // margin: $number-input-margin;
     background: $number-input-bg-color;
     -webkit-appearance: none;
     -webkit-box-shadow: none;
     outline: none;
     line-height: 1;
     background-image: none;
+    // border: 1px solid $number-input-border-color;
     border: 1px solid $number-input-border-color;
+    border-left-width: 0;
+    border-right-width: 0;
 }

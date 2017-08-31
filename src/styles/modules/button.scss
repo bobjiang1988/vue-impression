@@ -73,6 +73,9 @@
 
 .btn-secondary-outline {
     @include button-outline-variant($btn-secondary-border);
+    &.opacity{
+        background-color: rgba($btn-secondary-bg, .1);
+    }
 }
 
 .btn-default-outline {

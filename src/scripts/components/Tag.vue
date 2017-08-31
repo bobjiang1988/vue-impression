@@ -5,6 +5,7 @@
         :class="{
             [`tag-${theme}`]: !hollow,
             [`tag-outline-${theme}`]: hollow,
+            ['tag-block']: block,
             [`tag-${size}`]: size,
             [`border-${shape}`]: shape,
         }">
@@ -16,13 +17,14 @@
     export default {
         name: 'tag',
         props: {
+            block: Boolean,
             // 空心
             hollow: Boolean,
             // 尺寸
             size: {
                 type: String,
                 validator(value) {
-                    return ['sm', 'md'].indexOf(value) > -1;
+                    return ['sm', 'md', 'lg'].indexOf(value) > -1;
                 },
             },
             // 主题

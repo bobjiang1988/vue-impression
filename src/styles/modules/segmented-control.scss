@@ -1,25 +1,33 @@
 .segmented-control {
     font-size: 0;
-    display: inline-block;
+    // display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid $segmented-control-border-color;
     border-radius: $segmented-control-border-radius;
     background-color: $segmented-control-bg-color;
+    .segmented-control-item {
+        border-right: 1px solid $segmented-control-border-color;
+        &:last-child {
+            border-right: none;
+        }
+    }
 }
 
 .segmented-control-item {
+    flex: 1;
     display: inline-block;
+    text-align: center;
     color: $segmented-control-color;
     font-size: $segmented-control-item-font-size;
     padding: $segmented-control-item-padding;
     transition: $segmented-control-transition;
-
     &.active {
         color: $segmented-control-color-active;
         background-color: $segmented-control-bg-color-active;
     }
-
     &.disabled {
         opacity: $segmented-control-opacity-disabled;
     }
 }
-

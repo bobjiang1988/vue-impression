@@ -6,7 +6,7 @@
             v-model="model"
             :value="isGroupChildComponent ? value : val"
             :disabled="disabled || $parent.disabled">
-        <span class="radio-addon">
+        <span class="radio-addon" :class="{'reverse':reverse}">
             <i></i>
         </span>
         <span class="radio-label">
@@ -22,6 +22,7 @@
             value: {},
             val: {},
             disabled: Boolean,
+            reverse: Boolean,
         },
         computed: {
             model: {

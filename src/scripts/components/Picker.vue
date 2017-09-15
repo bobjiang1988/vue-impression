@@ -50,10 +50,10 @@
             getOptionHeight() {
                 if(this.itemHeight) return this.itemHeight;
 
-                let style = document.body.currentStyle ||
+                // let style = document.body.currentStyle ||
                 document.defaultView.getComputedStyle(document.body, '');
 
-                this.itemHeight = 3 * parseInt(style.fontSize, 10);
+                this.itemHeight = 30; // 3 * parseInt(style.fontSize, 10);
 
                 return this.itemHeight;
             },

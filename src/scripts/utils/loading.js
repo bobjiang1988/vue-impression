@@ -4,7 +4,8 @@ import OriginToast from '../components/Toast';
 const Toast = Vue.extend(OriginToast);
 
 let instance,
-    active = false;
+    active = false,
+    disabled = false;
 let loadingCount = 0;
 
 export default {
@@ -44,9 +45,12 @@ export default {
     toggle(message) {
         return active ? this.hide() : this.show(message);
     },
+    toggleDisabled() {
+        disabled = !disabled;
+    },
 };
 document.addEventListener('click', evt => {
-    if(active) {
+    if(active || disabled) {
         evt.preventDefault();
         evt.stopPropagation();
 

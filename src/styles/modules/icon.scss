@@ -18,7 +18,8 @@
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
     vertical-align: middle;
-    line-height: 1;
+    // line-height: 1;
+    line-height: inherit;
 }
 
 .icon-lg {
